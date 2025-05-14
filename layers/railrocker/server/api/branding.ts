@@ -10,8 +10,18 @@ export const branding: Branding = {
     alt: 'Rail Rocker logo',
     url: 'https://www.railrocker.com/'
   },
+  customTemplate: `
+  # hi
+  
+  ### I am an h3
+  
+  - Am I a list?
+  
+  {{BaseButton title="Hello"}}
+  `
 }
-
+  //
+  // <BaseButton></BaseButton>
 export default defineEventHandler(async (event) => {
   return branding;
 });

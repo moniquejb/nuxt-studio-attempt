@@ -7,4 +7,5 @@ export interface Branding {
 		url: string;
 	};
 	description: string;
+	customTemplate?: string;
 }

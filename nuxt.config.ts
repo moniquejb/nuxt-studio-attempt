@@ -44,11 +44,17 @@ export default defineNuxtConfig({
 		'@nuxt/fonts',
 		'@nuxt/icon',
 		'@nuxt/scripts',
-		'@nuxt/test-utils'
+		'@nuxt/test-utils',
 	],
 
 	extends: [
 		process.env.BRAND_ID ? './layers/' + process.env.BRAND_ID : '',
 		'./layers/base'
-	]
+	],
+
+	runtimeConfig: {
+		public: {
+			brandId: process.env.BRAND_ID
+		}
+	}
 })

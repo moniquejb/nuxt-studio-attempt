@@ -1,43 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// import tailwindcss from "@tailwindcss/vite";
+// import Aura from '@primeuix/themes/aura';
+
 export default defineNuxtConfig({
 	compatibilityDate: '2025-05-12',
 	devtools: {enabled: true},
-
-	// future: {
-	// 	compatibilityVersion: 4,
-	// },
-
-	// To re-enable _all_ Nuxt v3 behavior, set the following options:
-	// srcDir: '.',
-	// dir: {
-	//   app: 'app'
-	// },
-	// experimental: {
-	//   scanPageMeta: 'after-resolve',
-	//   sharedPrerenderData: false,
-	//   compileTemplate: true,
-	//   resetAsyncDataToUndefined: true,
-	//   templateUtils: true,
-	//   relativeWatchPaths: true,
-	//   normalizeComponentNames: false,
-	//   spaLoadingTemplateLocation: 'within',
-	//   parseErrorData: false,
-	//   pendingWhenIdle: true,
-	//   alwaysRunFetchOnKeyChange: true,
-	//   defaults: {
-	//     useAsyncData: {
-	//       deep: true
-	//     }
-	//   }
-	// },
-	// features: {
-	//   inlineStyles: true
-	// },
-	// unhead: {
-	//   renderSSRHeadOptions: {
-	//     omitLineBreaks: false
-	//   }
-	// },
 
 	modules: [
 		'@nuxt/eslint',
@@ -45,6 +12,7 @@ export default defineNuxtConfig({
 		'@nuxt/icon',
 		'@nuxt/scripts',
 		'@nuxt/test-utils',
+		// '@primevue/nuxt-module'
 	],
 
 	extends: [
@@ -56,5 +24,22 @@ export default defineNuxtConfig({
 		public: {
 			brandId: process.env.BRAND_ID
 		}
-	}
+	},
+
+	// css: ['@/assets/css/main.css'],
+	// vite: {
+	// 	plugins: [
+	// 		tailwindcss(),
+	// 	],
+	// },
+	// primevue: {
+	// 	options: {
+	// 		theme: {
+	// 			preset: Aura
+	// 		}
+	// 	}
+	// },
+	// build: {
+	// 	transpile: ['primevue']
+	// }
 })

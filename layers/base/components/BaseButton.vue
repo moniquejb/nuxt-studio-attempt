@@ -1,8 +1,11 @@
 <template>
- <button type="button">{{ title || "I am a button" }}</button>
+	<Button :label="title" />
+	<Button severity="secondary" :label="title" />
 </template>
 
 <script setup lang="ts">
+import Button from 'primevue/button';
+
 defineProps<{
 	title: string
 }>()

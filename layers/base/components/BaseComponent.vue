@@ -1,6 +1,6 @@
 <template>
 	<div v-if="branding">
-		<h1>{{ branding.name }}</h1>
+		<h1 class="text-primary">{{ branding.name }}</h1>
 
 		<a :href="branding.logo.url">
 			<img :src="branding.logo.srcUrl" :alt="branding.logo.alt" width="200px">
@@ -11,6 +11,10 @@
 			<div v-if="branding.customTemplate">
 				<MarkdownRenderer :markdown="branding.customTemplate" />
 			</div>
+	</div>
+
+	<div class="bg-secondary text-primary p-4">
+		This should have the primary color as background
 	</div>
 </template>
 

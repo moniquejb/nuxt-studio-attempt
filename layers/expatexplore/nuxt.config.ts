@@ -4,6 +4,10 @@ export default defineNuxtConfig({
 			title: 'Expat Explore Layer',
 		}
 	},
+	modules: [
+		'@nuxthq/studio',
+		'@nuxt/content'
+	],
 	extends: [
 		'../base'
 	]

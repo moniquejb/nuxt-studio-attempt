@@ -17,10 +17,13 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     defaults:
       run:
-        working-directory: content
+        working-directory: layers/expatexplore
+
+    strategy:
+      matrix:
+        node: [20]
 
     steps:
       - name: Checkout code
@@ -29,18 +32,18 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: ${{ matrix.node }}
           cache: 'yarn'
 
-      - name: Install dependencies
+      - name: Install dependencies (Yarn)
         run: yarn install
 
-      - name: Build Nuxt
-        run: yarn nuxi build --preset github_pages
+      - name: Generate
+        run: npx nuxi build --preset github_pages
         env:
           NUXT_CONTENT_PREVIEW_API: https://api.nuxt.studio
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: content/.output/public
+          folder: layers/expatexplore/.output/public

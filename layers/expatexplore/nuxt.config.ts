@@ -3,5 +3,8 @@ export default defineNuxtConfig({
 		head: {
 			title: 'Expat Explore Layer',
 		}
-	}
+	},
+	extends: [
+		'~/layers/base'
+	]
 })

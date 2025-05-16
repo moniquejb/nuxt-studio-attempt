@@ -11,14 +11,16 @@ export default defineNuxtConfig({
 		'@nuxt/fonts',
 		'@nuxt/icon',
 		'@nuxt/scripts',
-		'@nuxt/test-utils',
 		// '@primevue/nuxt-module'
+		'@nuxt/test-utils',
+		'@nuxthq/studio',
+		'@nuxt/content'
 	],
 
-	extends: [
-		process.env.BRAND_ID ? './layers/' + process.env.BRAND_ID : '',
-		'./layers/base'
-	],
+	// extends: [
+	// 	process.env.BRAND_ID ? './layers/' + process.env.BRAND_ID : '',
+	// 	'./layers/base'
+	// ],
 
 	runtimeConfig: {
 		public: {

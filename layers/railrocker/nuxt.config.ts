@@ -3,5 +3,8 @@ export default defineNuxtConfig({
 		head: {
 			title: 'Rail Rocker Layer',
 		}
-	}
+	},
+	extends: [
+		'~/layers/base'
+	]
 })

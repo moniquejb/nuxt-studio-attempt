@@ -18,7 +18,7 @@ export default defineNuxtConfig({
 	],
 
 	extends: [
-	// 	process.env.BRAND_ID ? './layers/' + process.env.BRAND_ID : '',
+		process.env.BRAND_ID ? './layers/' + process.env.BRAND_ID : '',
 		'./layers/base'
 	],
 

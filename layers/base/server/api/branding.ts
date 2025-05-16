@@ -1,4 +1,4 @@
-import type {Branding} from "~/layers/base/types/branding";
+import type {Branding} from "../../types/branding";
 
 export const branding: Branding = {
   id: 'base',

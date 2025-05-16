@@ -1,5 +1,5 @@
-import type {Branding} from "~/layers/base/types/branding";
-import { branding as base } from "~/layers/base/server/api/branding";
+import type {Branding} from "../../../base/types/branding";
+import { branding as base } from "../../../base/server/api/branding";
 
 export const branding: Branding = {
   ...base,

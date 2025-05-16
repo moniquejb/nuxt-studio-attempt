@@ -17,10 +17,10 @@ export default defineNuxtConfig({
 		'@nuxt/content'
 	],
 
-	// extends: [
+	extends: [
 	// 	process.env.BRAND_ID ? './layers/' + process.env.BRAND_ID : '',
-	// 	'./layers/base'
-	// ],
+		'./layers/base'
+	],
 
 	runtimeConfig: {
 		public: {

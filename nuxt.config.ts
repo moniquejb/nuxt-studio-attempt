@@ -27,6 +27,12 @@ export default defineNuxtConfig({
 		}
 	},
 
+	content: {
+		preview: {
+			api: 'https://api.nuxt.studio'
+		}
+	}
+
 	// css: ['@/assets/css/main.css'],
 	// vite: {
 	// 	plugins: [

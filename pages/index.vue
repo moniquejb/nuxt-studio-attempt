@@ -1,11 +1,11 @@
 <template>
 	<BaseComponent/>
-	<pre>{{Aura}}</pre>
+<!--	<pre>{{Aura}}</pre>-->
 </template>
 
 <script setup lang="ts">
 import Aura from '@primeuix/themes/aura';
 
-console.log(Aura)
+// console.log(Aura)
 
 </script>

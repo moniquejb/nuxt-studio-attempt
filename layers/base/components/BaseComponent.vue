@@ -14,7 +14,7 @@
 	</div>
 
 	<div class="bg-secondary text-primary p-4">
-		This should have the primary color as background
+		This should have the secondary color as a background
 	</div>
 </template>
 

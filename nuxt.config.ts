@@ -13,7 +13,6 @@ export default defineNuxtConfig({
 		'@nuxt/scripts',
 		// '@primevue/nuxt-module'
 		'@nuxt/test-utils',
-		'@nuxthq/studio',
 		'@nuxt/content'
 	],
 
